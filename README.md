@@ -6,7 +6,7 @@ Este é o back-end da aplicação **Food Explorer**, um menu digital interativo 
 
 ## 🚀 Deploy
 
-- 🔗 [Backend hospedado no Render]()
+- 🔗 [Backend hospedado no Render](https://rs-api-foodexplorer.onrender.com)
 
 ---
 

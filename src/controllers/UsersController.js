@@ -19,10 +19,11 @@ class UsersController {
     }
 
     const hashedPassword = await hash(password, 8);
+    const role = email.includes("admin") ? "admin" : "user"
 
     await database.run(
-      "INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
-      [name, email, hashedPassword]
+      "INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)",
+      [name, email, hashedPassword, role]
     );
 
     return response.status(201).json();
